@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Faq from "react-faq-component";
 
 const data = {
-    title: "FAQ (FREQUENTLY ASKED QUESTIONS)",
     rows: [
         {
             title: "What is the total supply?",
-            content: `A Total of 13,000 unique Alien Frens NFTs will be created.`,
+            content: `A Total of 13,000 unique Swift NFTs will be created.`,
         },
         {
             title: "WHY ALIEN Swift?",
@@ -22,11 +21,11 @@ const data = {
 };
 
 const styles = {
-     bgColor: 'transparent',
+    bgColor: 'transparent',
     titleTextColor: "white",
     rowTitleColor: "white",
-     rowContentColor: 'white',
-     arrowColor: "white",
+    rowContentColor: "white",
+    arrowColor: "#7A0BC0",
 };
 
 const config = {

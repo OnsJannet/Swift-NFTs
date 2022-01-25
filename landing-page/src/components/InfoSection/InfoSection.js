@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Container, Button } from '../../globalStyles';
 import ReactFloaterJs from 'react-floaterjs'
 import { HashLink } from "react-router-hash-link";

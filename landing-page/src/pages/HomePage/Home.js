@@ -5,7 +5,7 @@ import Mint from '../../components/Mint/Mint';
 import FAQ from '../../components/FAQ/Questions';
 import Goals from '../../components/Goals/Goals';
 import ScrollToTop from '../../components/ScrollToTop';
-import { Navbar, Footer } from '../../components';
+import { Navbar} from '../../components';
 import GlobalStyle from '../..//globalStyles';
 
 function Home() {

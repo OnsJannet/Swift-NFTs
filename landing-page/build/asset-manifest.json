@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/static/js/main.4d28eff8.chunk.js",
+    "main.js.map": "/static/js/main.4d28eff8.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.919d4321.js",
+    "runtime-main.js.map": "/static/js/runtime-main.919d4321.js.map",
+    "static/js/2.a6d5c6fa.chunk.js": "/static/js/2.a6d5c6fa.chunk.js",
+    "static/js/2.a6d5c6fa.chunk.js.map": "/static/js/2.a6d5c6fa.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.1304b85ada2e96f0c35d4e6b0fd8933d.js": "/precache-manifest.1304b85ada2e96f0c35d4e6b0fd8933d.js",
+    "service-worker.js": "/service-worker.js",
+    "static/js/2.a6d5c6fa.chunk.js.LICENSE.txt": "/static/js/2.a6d5c6fa.chunk.js.LICENSE.txt",
+    "static/media/Group9.png": "/static/media/Group9.c4bd3d92.png",
+    "static/media/swift_collection.png": "/static/media/swift_collection.03321982.png",
+    "static/media/swift_collections.png": "/static/media/swift_collections.27e0a540.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.919d4321.js",
+    "static/js/2.a6d5c6fa.chunk.js",
+    "static/js/main.4d28eff8.chunk.js"
+  ]
+}

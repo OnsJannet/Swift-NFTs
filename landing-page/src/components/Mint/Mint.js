@@ -3,10 +3,6 @@ import { ethers } from 'ethers'; //comunicate with the smart contract
 import Swift from '../../artifacts/contracts/Swift.sol/Swift.json';
 import HeroBackground from '../../images/swift_collections.png';
 import {
-    BigDiv,
-    BigContainer,
-    Banniere,
-    LogoOne,
     HeroH1,
     HeroP,
     ImageBg,

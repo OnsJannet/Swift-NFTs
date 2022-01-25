@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
+
 export const GoalsContainer = styled.div`
 height: 750px;
 display: flex;
 flex-direction: column;
 justify-content: center;
-background: #101522;
+background: #1A1A40;
 align-items: center;
 @media screen and (max-width: 768px) {
     height: 1400px;
@@ -46,8 +47,8 @@ padding: 40px;
 margin: 20px;
 transition: all 0.2s ease-in-out;
 box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.2);
-border-radius: 15px;
-background: rgba(6, 0, 28, 0.4);
+border-radius: 8px;
+background: #270082;
 overflow: hidden;
 border-top: solid rgba(255, 255, 255, 0.2);
 border-left: solid rgba(255, 255, 255, 0.2);
@@ -66,7 +67,7 @@ margin-bottom: 10px;
 
 export const GoalsH1 = styled.h1`
 font-size: 2.5rem;
-color: #fff;
+color: #FA58B6;
 margin-bottom: 64px;
 
 @media screen and (max-width: 480px) {

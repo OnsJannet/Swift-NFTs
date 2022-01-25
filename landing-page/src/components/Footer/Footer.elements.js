@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { HashLink } from "react-router-hash-link";
 
 export const FooterContainer = styled.div`
-  background-color: #101522;
+  background-color: #1A1A40;
   padding: 2rem 0 1rem 0;
   display: flex;
   flex-direction: column;

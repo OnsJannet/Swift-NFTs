@@ -9,7 +9,7 @@ export const homeObjOne = {
   headline: 'Discover & Collect Extraordinary NFTs',
   description:
     'Swift is a collection of unique Aliens living on the Ethereum blockchain. They are all automatically generated using diffrent attributes, assuring that every Swift NFT is 100% unique!',
-  buttonLabel: 'Connect Wallet',
+  buttonLabel: 'Mint a Swift NFT',
   imgStart: '',
   img: require('../../images/swift_collection.png'),
   alt: 'Collection',

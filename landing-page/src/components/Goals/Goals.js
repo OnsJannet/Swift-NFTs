@@ -3,14 +3,10 @@ import {GoalsContainer,
         GoalsH1,
         GoalsH2,
         GoalsWrapper,
-        GoalsIcon,
-        DiscordContainer,
         GoalsP,
-	    HeroBg,
-	    ImageBg,
         GoalsCard}
 from './GoalsElements'
-
+import 'react-vertical-timeline-component/style.min.css';
 
 const Goals = () => {
     return (

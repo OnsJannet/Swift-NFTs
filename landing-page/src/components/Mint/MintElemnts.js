@@ -47,7 +47,7 @@ export const Cosy = styled.p`
 
 export const Button = styled.button`
   border-radius: 4px;
-  background: ${({ primary }) => (primary ? '#4B59F7' : '#0467FB')};
+  background: ${({ primary }) => (primary ? '#4B59F7' : '#7A0BC0')};
   white-space: nowrap;
   padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};
   color: #fff;
@@ -60,8 +60,9 @@ export const Button = styled.button`
 
   &:hover {
     transition: all 0.3s ease-out;
-    background: #fff;
-    background-color: ${({ primary }) => (primary ? '#0467FB' : '#4B59F7')};
+    background: #FA58B6;
+    background-color: '#FA58B6';
+    color: #fff;
   }
 
   @media screen and (max-width: 960px) {
@@ -117,7 +118,7 @@ export const HeroContent = styled.div`
     align-items: center;
 `;
 export const HeroH1 = styled.h1`
-    color: #fff;
+    color: #FA58B6;
     font-size: 48px;
     text-align: center;
 

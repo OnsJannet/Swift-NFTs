@@ -7,14 +7,12 @@ import {
   Nav,
   NavbarContainer,
   NavLogo,
-  NavIcon,
   Logo,
   MobileIcon,
   NavMenu,
   NavItem,
   NavItemBtn,
   NavLinks,
-  NavBtnLink
 } from './Navbar.elements';
 
 function Navbar() {
@@ -72,15 +70,15 @@ function Navbar() {
               </NavItem>              
               <NavItemBtn>
                 {button ? (
-                  <NavBtnLink  href="https://discord.com/channels/935164442839224371/935164844854870096" rel="noopener noreferrer" target="_blank">
+                  <a href='https://discord.gg/nqdRQSY7' target="_blank" rel="noopener noreferrer">
                     <Button primary>Join Discord</Button>
-                  </NavBtnLink>
+                  </a>
                 ) : (
-                  <NavBtnLink href="https://discord.com/channels/935164442839224371/935164844854870096">
+                  <a href='https://discord.gg/nqdRQSY7' target="_blank" rel="noopener noreferrer">
                     <Button onClick={closeMobileMenu} fontBig primary>
                       Join Discord
                     </Button>
-                  </NavBtnLink>
+                  </a>
                 )}
               </NavItemBtn>
             </NavMenu>
