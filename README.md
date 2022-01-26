@@ -3,7 +3,7 @@
 Swift is a collection of unique Aliens living on the Ethereum blockchain. They are all automatically generated using diffrent attributes, assuring that every Swift NFT is 100% unique!
 
 <p align="center" display="inline-block">
-  <img src="./landing-page/Swift.png" alt="swift_brand">
+  <img src="./Swift.png" alt="swift_brand">
 </p>
 
 Swift is composed of :
