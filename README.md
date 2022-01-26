@@ -1,4 +1,4 @@
-# Swift-NFTs
+# Swift NFTs
 
 Swift is a collection of unique Aliens living on the Ethereum blockchain. They are all automatically generated using diffrent attributes, assuring that every Swift NFT is 100% unique!
 
@@ -14,11 +14,10 @@ This is used to generate the actual NFTs
 * [Swift](./landing-page):
 The front end part of the project.
 
-## To create the NFTs:
+## How to use the project:
 
 ```
 git clone https://github.com/OnsJannet/Swift-NFTs.git
-
 yarn install
 ```
 
