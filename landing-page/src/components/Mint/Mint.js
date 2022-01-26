@@ -18,13 +18,17 @@ from './MintElemnts';
 
 const TSaddress = "0xAea9477B3380845bA82A4DBB7B6D06d711c7020C";
 
+
 function Mint() {
 
   const [error, setError] = useState('');
-  const [data, setData] = useState({})
+  const [account, setAccount] = useState([]);
+  const [data, setData] = useState({});
 
   useEffect(() => {
     fetchData();
+    getAccounts();
+
   }, [])
 
   async function fetchData() {
@@ -64,6 +68,31 @@ function Mint() {
     }
   }
 
+
+  async function withdraw() {
+    if(typeof window.ethereum !== 'undefined') {
+      let accounts = await window.ethereum.request({method: 'eth_requestAccounts'});
+      const provider = new ethers.providers.Web3Provider(window.ethereum);
+      const signer = provider.getSigner();
+      const contract = new ethers.Contract(TSaddress, Swift.abi, signer);
+      try {
+        const transaction = await contract.withdraw();
+        await transaction.wait();
+      }
+      catch(err) {
+        setError(err.message);
+      }
+    }
+  }
+
+  async function getAccounts() {
+      if(typeof window.ethereum !== 'undefined') {
+        let accounts = await window.ethereum.request({method: 'eth_requestAccounts'});
+      setAccount(accounts);
+      console.log(accounts[0]);
+    }
+  }
+
   return (
     <HeroContainer id="mint">
 
@@ -84,6 +113,7 @@ function Mint() {
         <Count>{data.totalSupply} / 100</Count>
         <Cosy>Each Swift NFT costs {data.cost / 10**18} ETH (excluding gas fees)</Cosy>
         <Button onClick={mint}>Mint one Swift NFT</Button>
+        {account[0] === '0x283967bf7828a37a3c1017118f86329a8a8a4de4' && <Button onClick={withdraw}>withdraw</Button>}
       </HeroContent>
     </HeroContainer>
   );
