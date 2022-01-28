@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 
 export const FAQContainer = styled.div`
-    background: #0c0c0c;
+    background: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +10,6 @@ export const FAQContainer = styled.div`
     height: 400px;
     position: relative;
     z-index: 1;
-    background: #1A1A40;
     :before {
         content: '';
         position: absolute;
@@ -33,6 +32,13 @@ export const FAQBg = styled.div`
     height: 100%;
     overflow: gidden;
 `;
+
+export const Image = styled.img` 
+    width: 20%;
+    padding-top: 40px;
+
+`
+
 export const ImageBg = styled.video`
     width: 100%;
     height: 100%;
@@ -45,17 +51,19 @@ export const FAQContent = styled.div`
     max-width: 1200px;
     position: absolute;
     padding: 8px 24px;
-    background: #270082;
+    background: #000000;
     display: flex;
     height: 240px;
     flex-direction: column;
     align-items: center;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
-    background: #270082;
-    overflow: hidden;
-    border-top: solid rgba(255, 255, 255, 0.2);
-    border-left: solid rgba(255, 255, 255, 0.2);
+transition: all 0.2s ease-in-out;
+box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.2);
+border-radius: 8px;
+background: rgba(135, 45, 245, 0.2);
+overflow: hidden;
+border: solid rgba(135, 45, 245, 0.3);
 `;
 
 export const  FAQContent1 = styled.div`

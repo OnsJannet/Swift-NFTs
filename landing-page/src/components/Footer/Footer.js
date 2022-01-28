@@ -7,6 +7,7 @@ import {
   Logo,
   SocialMedia,
   SocialMediaWrap,
+  Image,
   SocialLogo,
   WebsiteRights,
 } from './Footer.elements';
@@ -19,7 +20,8 @@ function Footer() {
           <SocialLogo smooth to="/#home">
               <Logo src={LogoImg} /> 
           </SocialLogo>
-          <WebsiteRights>Swift © 2022</WebsiteRights>
+          <WebsiteRights> © Copyright Swift 2022, <br>
+          </br>All Rights Reserved </WebsiteRights>
         </SocialMediaWrap>
       </SocialMedia>
     </FooterContainer>

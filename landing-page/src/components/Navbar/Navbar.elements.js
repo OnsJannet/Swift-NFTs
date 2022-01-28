@@ -5,7 +5,7 @@ import { Container } from '../../globalStyles';
 import { HashLink } from "react-router-hash-link";
 
 export const Nav = styled.nav`
-  background: #1A1A40;
+  background: #000000;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -21,7 +21,7 @@ export const NavbarContainer = styled(Container)`
   justify-content: space-between;
   height: 80px;
 
-  ${Container}
+  
 `;
 
 export const NavLogo = styled(HashLink)`
@@ -36,6 +36,10 @@ export const NavLogo = styled(HashLink)`
 
 export const NavIcon = styled(FaMagento)`
   margin-right: 0.5rem;
+`;
+
+export const LeftNav = styled.div`
+  float: left;
 `;
 
 export const MobileIcon = styled.div`
@@ -54,6 +58,7 @@ export const MobileIcon = styled.div`
 
 export const NavMenu = styled.ul`
   display: flex;
+  font-weight: 600;
   align-items: center;
   list-style: none;
   text-align: center;
@@ -68,16 +73,19 @@ export const NavMenu = styled.ul`
     left: ${({ click }) => (click ? 0 : '-100%')};
     opacity: 1;
     transition: all 0.5s ease;
-    background: #1A1A40;
+    background: #000000;
   }
 `;
 
 export const NavItem = styled.li`
   height: 80px;
   border-bottom: 2px solid transparent;
+  align-items: center;
+  text-align: center;
+
 
   &:hover {
-    border-bottom: 2px solid #7A0BC0;
+    border-bottom: 2px solid #872df5;
   }
 
   @media screen and (max-width: 960px) {
@@ -103,6 +111,8 @@ export const NavLinks = styled(HashLink)`
   color: #fff;
   display: flex;
   align-items: center;
+  text-align: center;
+  position: center;
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;

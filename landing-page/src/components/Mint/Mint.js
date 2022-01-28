@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { ethers } from 'ethers'; //comunicate with the smart contract
 import Swift from '../../artifacts/contracts/Swift.sol/Swift.json';
-import HeroBackground from '../../images/swift_collections.png';
+import HeroBackground from '../../images/Imageneon.png';
 import {
     HeroH1,
     HeroP,
     ImageBg,
     HeroBg,
+    Image,
     Count,
+    FlexButtons,
     Cosy,
     HeroContainer,
     HeroContent,
@@ -95,14 +97,6 @@ function Mint() {
 
   return (
     <HeroContainer id="mint">
-
-                <HeroBg>
-            
-                <ImageBg style={{ backgroundImage: `url(${HeroBackground})`,   backgroundPosition: 'center',
-                    backgroundSize: 'cover',
-                    backgroundRepeat: 'no-repeat' }}
-                />            
-            </HeroBg>
       <HeroContent>
         {error && <p>{error}</p>}
         <HeroH1>Mint a Swift NFT !</HeroH1>
@@ -112,8 +106,11 @@ function Mint() {
         </HeroP>
         <Count>{data.totalSupply} / 100</Count>
         <Cosy>Each Swift NFT costs {data.cost / 10**18} ETH (excluding gas fees)</Cosy>
-        <Button onClick={mint}>Mint one Swift NFT</Button>
-        {account[0] === '0x283967bf7828a37a3c1017118f86329a8a8a4de4' && <Button onClick={withdraw}>withdraw</Button>}
+        <FlexButtons>
+        <Button onClick={mint}>Mint Swift NFT</Button>
+        {account[0] === '0x283967bf7828a37a3c1017118f86329a8a8a4de4' && <Button onClick={withdraw}>Withdraw ETH </Button>}
+        </FlexButtons>
+        <Image src={HeroBackground} />
       </HeroContent>
     </HeroContainer>
   );

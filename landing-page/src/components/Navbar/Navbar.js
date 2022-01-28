@@ -11,6 +11,7 @@ import {
   MobileIcon,
   NavMenu,
   NavItem,
+  LeftNav,
   NavItemBtn,
   NavLinks,
 } from './Navbar.elements';
@@ -41,13 +42,19 @@ function Navbar() {
       <IconContext.Provider value={{ color: '#fff' }}>
         <Nav>
           <NavbarContainer>
-            <NavLogo smooth to="/#home" onClick={closeMobileMenu}>
-		<Logo src={LogoImg} /> 
-</NavLogo>
+
+            <LeftNav>
+              <NavLogo smooth to="/#home" onClick={closeMobileMenu}>
+		            <Logo src={LogoImg} /> 
+              </NavLogo>
+            </LeftNav>
+
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
             </MobileIcon>
+
             <NavMenu onClick={handleClick} click={click}>
+            
               <NavItem>
                 <NavLinks smooth to="/#home" onClick={closeMobileMenu}>
                   Home
@@ -67,7 +74,8 @@ function Navbar() {
                 <NavLinks smooth to='/#FAQ' onClick={closeMobileMenu}>
                   FAQ
                 </NavLinks>
-              </NavItem>              
+              </NavItem>  
+
               <NavItemBtn>
                 {button ? (
                   <a href='https://discord.gg/nqdRQSY7' target="_blank" rel="noopener noreferrer">
@@ -82,6 +90,7 @@ function Navbar() {
                 )}
               </NavItemBtn>
             </NavMenu>
+
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>

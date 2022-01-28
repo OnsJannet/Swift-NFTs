@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { HashLink } from "react-router-hash-link";
 
 export const FooterContainer = styled.div`
-  background-color: #1A1A40;
+  background-color: #000000;
   padding: 2rem 0 1rem 0;
   display: flex;
   flex-direction: column;
@@ -22,6 +22,18 @@ export const FooterSubscription = styled.section`
   padding: 24px;
   color: #fff;
 `;
+
+export const Image = styled.img` 
+    width: 20%;
+    padding-top: 40px;
+
+`
+
+export const Video = styled.video` 
+    width: 20%;
+    padding-top: 40px;
+
+`
 
 export const FooterSubHeading = styled.p`
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',

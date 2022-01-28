@@ -8,7 +8,7 @@ const data = {
             content: `A Total of 13,000 unique Swift NFTs will be created.`,
         },
         {
-            title: "WHY ALIEN Swift?",
+            title: "WHY Swift?",
             content:
                 "When you join the Swift, you are securing a life long frenship with 13,000 swifties. We created this community based project with the intent of making the biggest group of swifties possible. The community comes first, which in turns drives value. Come be Swift ",
         },

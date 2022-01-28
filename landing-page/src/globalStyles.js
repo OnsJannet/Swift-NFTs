@@ -1,5 +1,6 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
+
 const GlobalStyle = createGlobalStyle`
   * {
   box-sizing: border-box;
@@ -25,21 +26,22 @@ export const Container = styled.div`
 `;
 
 export const Button = styled.button`
-  border-radius: 4px;
-  background: ${({ primary }) => (primary ? '#7A0BC0' : '#0467FB')};
+  border-radius: 8px;
+  width: 150px;
+  background: #872df5;
   white-space: nowrap;
-  padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};
+  padding: 12px;
   color: #fff;
-  font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
+  font-size: 16px;
+  font-weight: 700;
   outline: none;
   border: none;
   cursor: pointer;
 
   &:hover {
     transition: all 0.3s ease-out;
-    background: #fff;
-    background-color: ${({ primary }) => (primary ? '#FA58B6' : '#4B59F7')};
-    color: #fff;
+    background-color: #fff;
+    color: #872df5;
   }
 
   @media screen and (max-width: 960px) {

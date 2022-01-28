@@ -6,7 +6,7 @@ height: 750px;
 display: flex;
 flex-direction: column;
 justify-content: center;
-background: #1A1A40;
+background: #000000;
 align-items: center;
 @media screen and (max-width: 768px) {
     height: 1400px;
@@ -48,10 +48,9 @@ margin: 20px;
 transition: all 0.2s ease-in-out;
 box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.2);
 border-radius: 8px;
-background: #270082;
+background: rgba(135, 45, 245, 0.2);
 overflow: hidden;
-border-top: solid rgba(255, 255, 255, 0.2);
-border-left: solid rgba(255, 255, 255, 0.2);
+border: solid rgba(135, 45, 245, 0.3);
 
 &:hover {
     transform: scale(1.02);
@@ -67,7 +66,7 @@ margin-bottom: 10px;
 
 export const GoalsH1 = styled.h1`
 font-size: 2.5rem;
-color: #FA58B6;
+color: #fff;
 margin-bottom: 64px;
 
 @media screen and (max-width: 480px) {

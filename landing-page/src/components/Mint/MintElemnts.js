@@ -7,6 +7,7 @@ export const BigDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
 `
 
 
@@ -16,6 +17,7 @@ export const BigContainer = styled.div`
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
+
 `
 
 export const Banniere = styled.div`
@@ -40,35 +42,52 @@ export const Count = styled.p`
 `
 
 export const Cosy = styled.p`
-  color: #fff;
+  color: #872df5;
   font-weight: 300;
   font-size: 0.8rem;
 `
 
 export const Button = styled.button`
-  border-radius: 4px;
-  background: ${({ primary }) => (primary ? '#4B59F7' : '#7A0BC0')};
+  border-radius: 8px;
+  background: #872df5;
   white-space: nowrap;
-  padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};
+  padding: 10px;
   color: #fff;
   font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
   font-weight: bold;
+  width: 250px;
   outline: none;
   border: none;
   cursor: pointer;
-  margin-top: 40px;
+  margin-left: 20px;
+   margin-top: 12px;
 
   &:hover {
     transition: all 0.3s ease-out;
-    background: #FA58B6;
-    background-color: '#FA58B6';
-    color: #fff;
+    background-color: #fff;
+    color: #872df5;
   }
 
   @media screen and (max-width: 960px) {
     width: 100%;
   }
 `
+
+export const Image = styled.img` {
+    width: 80%;
+    padding-top: 40px;
+}
+`
+
+export const FlexButtons = styled.div` {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+`
+
 export const HeroP= styled.p`
     margin-top: 24px;
     color: #fff;
@@ -85,7 +104,7 @@ export const HeroP= styled.p`
 `;
 
 export const HeroContainer = styled.div`
-    background: #0c0c0c;
+    background: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,13 +133,15 @@ export const HeroContent = styled.div`
     padding: 8px 24px;
     display: flex;
     flex-direction: column;
-    top: 150px;
+    top: 8px;
     align-items: center;
 `;
 export const HeroH1 = styled.h1`
-    color: #FA58B6;
+    color: #fff;
     font-size: 48px;
+    font-weight: 700;
     text-align: center;
+    top: 20px;
 
     @media screen and (max-width: 768px) {
         font-size: 40 px;
